@@ -1,4 +1,4 @@
-Started by user Tanu
+Started by an SCM change
 Building in workspace /var/lib/jenkins/jobs/Demo-infrastructure-as-code/workspace
  > git rev-parse --is-inside-work-tree # timeout=10
 Fetching changes from the remote Git repository
@@ -7,16 +7,16 @@ Fetching upstream changes from https://github.com/tmccabe07/demo-brown-bag.git
  > git --version # timeout=10
 using .gitcredentials to set credentials
  > git config --local credential.username tmccabe # timeout=10
- > git config --local credential.helper store --file=/tmp/git2232273298052232262.credentials # timeout=10
+ > git config --local credential.helper store --file=/tmp/git8939033292547376166.credentials # timeout=10
  > git -c core.askpass=true fetch --tags --progress https://github.com/tmccabe07/demo-brown-bag.git +refs/heads/*:refs/remotes/origin/*
  > git config --local --remove-section credential # timeout=10
  > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
  > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
-Checking out Revision 924a2163c2ee6e9197e362f928bc5d76b1d420ce (refs/remotes/origin/master)
+Checking out Revision 5d8a23c9db3b7e1351be99be6384ee3f5919dd11 (refs/remotes/origin/master)
  > git config core.sparsecheckout # timeout=10
- > git checkout -f 924a2163c2ee6e9197e362f928bc5d76b1d420ce
+ > git checkout -f 5d8a23c9db3b7e1351be99be6384ee3f5919dd11
  > git rev-list 924a2163c2ee6e9197e362f928bc5d76b1d420ce # timeout=10
-[workspace] $ /bin/sh -xe /tmp/hudson2983371467702454671.sh
+[workspace] $ /bin/sh -xe /tmp/hudson1711990939433993090.sh
 + PATH=/usr/local/terraform/bin:/home/ec2-user/terraform:/sbin:/usr/sbin:/bin:/usr/bin
 + cd /home/ec2-user/demo-brown-bag
 + terraform plan
@@ -56,14 +56,14 @@ Note: You didn't specify an "-out" parameter to save this plan, so when
 [0m
 [0m[32m+ aws_subnet.main
 [0m    availability_zone:       "" => "<computed>"
-    cidr_block:              "" => "10.0.0.0/24"
+    cidr_block:              "" => "10.0.1.0/24"
     map_public_ip_on_launch: "" => "0"
     tags.#:                  "" => "1"
     tags.Name:               "" => "Main"
     vpc_id:                  "" => "${aws_vpc.main.id}"
 [0m
 [0m[32m+ aws_vpc.main
-[0m    cidr_block:                "" => "10.0.0.0/24"
+[0m    cidr_block:                "" => "10.0.1.0/24"
     default_network_acl_id:    "" => "<computed>"
     default_security_group_id: "" => "<computed>"
     dhcp_options_id:           "" => "<computed>"
@@ -76,7 +76,7 @@ Note: You didn't specify an "-out" parameter to save this plan, so when
 [0m
 [0m
 [0m[1mPlan:[0m 5 to add, 0 to change, 0 to destroy.[0m
-+ curl http://54.152.25.202:8080/job/Demo-infrastructure-as-code/6/consoleText -o output.txt
++ curl http://54.152.25.202:8080/job/Demo-infrastructure-as-code/7/consoleText -o output.txt
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
