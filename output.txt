@@ -9,11 +9,11 @@ using GIT_SSH to set credentials Tanu-github-ssh
  > git -c core.askpass=true fetch --tags --progress git@github.com:tmccabe07/demo-brown-bag.git +refs/heads/*:refs/remotes/origin/*
  > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
  > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
-Checking out Revision de10b7781f3d8aa5538dab9c96e41d79d5817dfd (refs/remotes/origin/master)
+Checking out Revision b1f4239f86493170a164025f2047fdff5292a242 (refs/remotes/origin/master)
  > git config core.sparsecheckout # timeout=10
- > git checkout -f de10b7781f3d8aa5538dab9c96e41d79d5817dfd
- > git rev-list f40ed05894c0fcec3d3255e391b9c81b7bcc98c5 # timeout=10
-[workspace] $ /bin/sh -xe /tmp/hudson5494137817034581593.sh
+ > git checkout -f b1f4239f86493170a164025f2047fdff5292a242
+ > git rev-list de10b7781f3d8aa5538dab9c96e41d79d5817dfd # timeout=10
+[workspace] $ /bin/sh -xe /tmp/hudson4706824681250996715.sh
 + PATH=/usr/local/terraform/bin:/home/ec2-user/terraform:/sbin:/usr/sbin:/bin:/usr/bin
 + terraform plan
 Refreshing Terraform state prior to plan...
@@ -72,7 +72,7 @@ Note: You didn't specify an "-out" parameter to save this plan, so when
 [0m
 [0m
 [0m[1mPlan:[0m 5 to add, 0 to change, 0 to destroy.[0m
-+ curl http://54.84.189.68:8080/job/Demo-infrastructure-as-code/21/consoleText -o output.txt
++ curl http://54.84.189.68:8080/job/Demo-infrastructure-as-code/22/consoleText -o output.txt
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
