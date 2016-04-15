@@ -1,4 +1,4 @@
-Started by user Tanu
+Started by an SCM change
 Building in workspace /var/lib/jenkins/jobs/Demo-infrastructure-as-code/workspace
  > git rev-parse --is-inside-work-tree # timeout=10
 Fetching changes from the remote Git repository
@@ -9,11 +9,11 @@ using GIT_SSH to set credentials Tanu-github-ssh
  > git -c core.askpass=true fetch --tags --progress git@github.com:tmccabe07/demo-brown-bag.git +refs/heads/*:refs/remotes/origin/*
  > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
  > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
-Checking out Revision 3083f12284d36d376c75055c4713f0e1c625f42f (refs/remotes/origin/master)
+Checking out Revision f40ed05894c0fcec3d3255e391b9c81b7bcc98c5 (refs/remotes/origin/master)
  > git config core.sparsecheckout # timeout=10
- > git checkout -f 3083f12284d36d376c75055c4713f0e1c625f42f
-First time build. Skipping changelog.
-[workspace] $ /bin/sh -xe /tmp/hudson4915253359937477793.sh
+ > git checkout -f f40ed05894c0fcec3d3255e391b9c81b7bcc98c5
+ > git rev-list 3083f12284d36d376c75055c4713f0e1c625f42f # timeout=10
+[workspace] $ /bin/sh -xe /tmp/hudson3481010194455094494.sh
 + PATH=/usr/local/terraform/bin:/home/ec2-user/terraform:/sbin:/usr/sbin:/bin:/usr/bin
 + terraform plan
 Refreshing Terraform state prior to plan...
@@ -72,7 +72,7 @@ Note: You didn't specify an "-out" parameter to save this plan, so when
 [0m
 [0m
 [0m[1mPlan:[0m 5 to add, 0 to change, 0 to destroy.[0m
-+ curl http://54.84.189.68:8080/job/Demo-infrastructure-as-code/19/consoleText -o output.txt
++ curl http://54.84.189.68:8080/job/Demo-infrastructure-as-code/20/consoleText -o output.txt
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
