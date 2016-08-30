@@ -4,6 +4,7 @@ provider "aws" {
   region = "us-east-1"
 }
 
+#variable
 variable "cidr_block" {}
 
 resource "aws_vpc" "main" {
